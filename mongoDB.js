@@ -14,5 +14,6 @@ mongoClient.connect(connectionUrl,{ useNewUrlParser: true },(error,client)=>{
      name:'mohamed',
      age:26
  })
-
+ db.collection('employee').insertMany([{name:'ali',salary:2000},{name:'mahmoud',salary:300}])
+ 
 })
